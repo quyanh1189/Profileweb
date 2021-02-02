@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    font-size: 15px;
+    color: #b3b3b3;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+p{
+    display:block;
+    margin-top:0;
+    margin-bottom: 15px;
+}
+a{
+    color:red;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover{
+    color: #af1f2b;
+}
+/* PC*/
+@media screen and (min-width: 1024px){
+	.profile{
+        width: 100%;
+        height: auto;
+        display: flex;
+        float: left;
+    }
+	.image{
+        height: 100vh;
+        background-repeat: no-repeat;
+        flex: 1;
+	}
+	.intro{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        margin-block-start: 200px;
+        text-align: left;
+    }
+
+    .intro__mainfile, .intro__contact{
+        padding: 0 70px;
+    }
+    .intro__mainfile h2{
+        display: block;
+        font-size: 40px;
+        font-weight: 700;
+        color: rgba(44, 36, 36, 0.925);
+        line-height: 1.2;
+    }
+    .intro__mainfile--m{
+        font-family: calibri light;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .intro__mainfile--m1, .intro__mainfile--m2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+    }
+    nav .Menu a{
+        position: absolute;
+        right: 12px;
+        font-size: 17px;
+        font-family: calibri light;
+        color:rgba(184, 171, 171, 0.925);
+    }
+    nav .Menu a:hover{
+        color:rgba(138, 93, 93, 0.925)
+    }
+    .test {
+
+        width: 215px;
+        height: 100vh;
+        background-color: #283149;
+        position: fixed;
+        margin-right: -215px;
+        top: 0;
+        right: 0;
+        padding: 30px 18px;
+        box-sizing: border-box;
+    }
+    .test .menu--element{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color:rgb(255, 255, 255);
+        padding: 5px 0;
+    }
+    .menu--element:hover{
+        color:rgba(158, 152, 152, 0.925);
+        transition: .5s;
+    }
+}
+
+/* tablet - PC LOW  */
+@media screen and (min-width:740px) and (max-width: 1023px){
+    .profile{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .image img{
+        background-size: cover;
+        max-height: 500px;
+    }
+    .intro {
+        margin: 15px 15px 0;
+        box-sizing: border-box;
+    }
+    nav .Menu a{
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        font-size: 20px;
+        font-family: calibri light;
+        color:rgba(184, 171, 171, 0.925);
+    }
+    .intro__mainfile h2{
+        display: block;
+        font-size: 36px;
+        font-weight: 700;
+        color: rgba(44, 36, 36, 0.925);
+        line-height: 1.2;
+    }
+    .intro__mainfile--m{
+        font-family: calibri light;
+        font-size: 26px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+    .intro__mainfile--m1, .intro__mainfile--m2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 19px;
+    }
+    .profile .intro .intro__contact a {
+        font-size: 17px !important;
+    }
+}
+	
+/* Mobie */
+@media screen and (max-width:739px) {
+    .profile{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .image img{
+        background-size: cover;
+        max-height: 300px;
+    }
+    .intro {
+        margin: 0 15px;
+        box-sizing: border-box;
+    }
+    nav .Menu a{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 15px;
+        font-family: calibri light;
+        color:rgba(184, 171, 171, 0.925);
+    }
+    .intro__mainfile h2{
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        color: rgba(44, 36, 36, 0.925);
+        line-height: 1.2;
+    }
+    .intro__mainfile--m{
+        font-family: calibri light;
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    .intro__mainfile--m1, .intro__mainfile--m2{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:15px;
+    }
+}
